@@ -22,6 +22,7 @@ public class CannonAngleAdjust extends SubsystemBase {
     angleAdjustConfig.idleMode(IdleMode.kBrake);
     angleAdjustConfig.smartCurrentLimit(CURRENT_LIMIT);
     angleAdjustConfig.openLoopRampRate(RAMP_RATE);
+
     angleAdjustMotor.configure(angleAdjustConfig, ResetMode.kResetSafeParameters, PersistMode.kPersistParameters);
   }
   
